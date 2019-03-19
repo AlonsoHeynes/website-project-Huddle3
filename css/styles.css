@@ -1,0 +1,313 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body {
+  font-family: 'Open sans', sans-serif;
+}
+
+.hidden {
+  display: none;
+
+}
+.container {
+  padding: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.top-logo-and-button {
+  margin: 20px 0;
+}
+
+.top-logo {
+  float: left;
+  width: 50%;
+}
+
+.top-logo img {
+  width: 70%;
+}
+
+.top-button {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.hollow {
+  border: 1px solid hsl(322, 100%, 66%);
+  background: transparent;
+  color: hsl(322, 100%, 66%);
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 4px 10px;
+}
+
+header {
+  margin: 80px 0 80px;
+  text-align: center;
+}
+
+.header-text {
+  width: 85%;
+  margin: 80px auto 80px;
+}
+
+header h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  color: hsl(192, 100%, 9%);
+}
+
+header p {
+  font-size: 11px;
+  line-height: 1.5;
+  color: hsl(208, 11%, 55%);
+  mar
+}
+
+header img {
+  width: 100%;
+}
+
+.content {
+  padding: 20px;
+  background-color: #f6fbff;
+}
+
+.content img {
+  width: 100%;
+
+  margin-top: 40px;
+}
+
+.content h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  margin-top: 40px;
+  color: hsl(192, 100%, 9%);
+}
+
+.content p {
+  font-size: 11px;
+  line-height: 1.5;
+  color: hsl(208, 11%, 55%);
+}
+
+.pink {
+  border: none;
+  background: hsl(322, 100%, 66%);
+  color: #fff;;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 10px 40px;
+}
+
+.ready-to-build-and-button {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+.ready-to-build-and-button h2 {
+  font-size: 16px;
+  color: hsl(192, 100%, 9%);
+}
+
+
+.bottom-section {
+  background-color: hsl(192, 100%, 9%);
+  color: #fff;
+  padding: 40px 20px 20px;
+  background-image: url(../images/bg-footer-mobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+.bottom-section label {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.bottom-section label {
+  display: block;
+}
+
+.subscribe {
+  margin-bottom: 60px;
+}
+
+.bottom-section input {
+  border-radius: 0;
+  border: 1px solid #eee;
+  padding: 5px;
+  font-size: 12px;
+  width: 88%;
+}
+
+.bottom-section button {
+  border-radius: 0;
+  padding: 6px;
+  width: 10%;
+  font-size: 12px;
+}
+
+.btn-logo-and-social {
+  margin-bottom: 60px;
+}
+
+.btn-logo-and-social img {
+  width: 70%;
+}
+
+.btn-logo-and-social p {
+  line-height: 1.5;
+  font-size: 1em;
+}
+
+.btn-logo-and-social ul {
+  padding: 0;
+}
+
+.btn-logo-and-social ul li {
+  list-style-type: none;
+}
+
+.btn-logo-and-social i {
+  margin-right: 15px;
+  color: #fff;
+  font-size: 1.7em;
+}
+
+.part1 {
+  margin-bottom: 60px;
+}
+
+.bottom-section nav a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.copyright {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 12px;
+}
+footer {
+
+}
+
+
+
+.btn-logo-and-social {
+
+}
+@media only screen and (min-width: 768px) {
+  .top-logo img {
+    width: auto;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  button.hidden {
+    margin: 40px auto;
+  }
+
+  header {
+    padding: 0 160px;
+  }
+
+  header h1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  header p {
+    font-size: 22px;
+    width: 85%;
+    margin:  0 auto;
+  }
+
+  .content {
+    margin: 0 100px;
+  }
+
+  .content img {
+    float: right;
+    width: 50%;
+    padding: 80px 60px;
+    margin: 0;
+  }
+
+  .content-text h2 {
+    font-size: 26px;
+  }
+
+  .content-text p {
+    font-size: 16px;
+  }
+
+  .ready-to-build-and-button button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .bottom-section {
+    padding: 60px;
+    background-size: auto;
+    background-repeat: repeat-x;
+
+  }
+
+  .btn-logo-and-social img {
+    width: auto;
+  }
+
+  .btn-logo-and-social {
+    float: left;
+    width: 25%;
+  }
+
+  .part1 {
+    float: right;
+    width: 25%;
+  }
+
+  .bottom-section nav a {
+    margin-left: 80px;
+  }
+
+  .part2 {
+    float: right;
+    width: 25%;
+  }
+
+  .subscribe {
+    float: right;
+    width: 25%;
+  }
+
+  .copyright {
+    margin: 0;
+  }
+
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
